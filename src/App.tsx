@@ -1,17 +1,15 @@
-import React from 'react';
-import {ReactComponent as Logo} from './logo.svg';
-import './App.css';
+import React from "react";
+import map from "./assets/map.jpg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Logo className="App-logo"/>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-          Best of luck on your task!
-        </p>
-      </header>
+      <div className="left">
+        <img src={map} className="map" alt="World Map" />
+        <div className="geo-info">geo info</div>
+      </div>
+      <div className="aurora-info">aurora info</div>
     </div>
   );
 }
